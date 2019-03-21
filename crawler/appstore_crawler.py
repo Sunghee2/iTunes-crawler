@@ -11,10 +11,10 @@ def userInput():
     term = term.replace(" ", "+")
 
     print("Please enter the number of the type of results you want returnd ex) 1")
-    print("1.movie 2.podcast 3.music 4.musicVideo 5.audiobook 6.shortFilm 7.tvShow 8.software(app) 9.ebook 10.all")
+    print("1.movie 2.podcast 3.musicVideo 4.audiobook 5.shortFilm 6.tvShow 7.software(app) 8.ebook 9.all")
     type_num = input()
     type_str = type_list[int(type_num) - 1]
-    
+
     cntry = input("Please enter the two-letter country code for the store you want to search: ")
     cntry = cntry.lower()
     if(len(cntry) == 0):
