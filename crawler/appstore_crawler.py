@@ -37,9 +37,17 @@ def main():
         'limit': 200
     })
     j = r.json()
+    
+    if(j['resultCount'] > 0):
         df = pd.DataFrame(j['results'])
         filename = term + "_" + type_str + ".csv"
         # df[['trackName', 'description']].to_csv(filename)
         df.to_csv(filename)
+
+        print("%d results" % j['resultCount'])
+    else:
+        print("No Results")
+
+
 if __name__ == "__main__":
     main()
