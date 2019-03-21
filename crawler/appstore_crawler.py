@@ -14,8 +14,7 @@ def userInput():
     print("1.movie 2.podcast 3.music 4.musicVideo 5.audiobook 6.shortFilm 7.tvShow 8.software(app) 9.ebook 10.all")
     type_num = input()
     type_str = type_list[int(type_num) - 1]
-    print(type_str)
-
+    
     cntry = input("Please enter the two-letter country code for the store you want to search: ")
     cntry = cntry.lower()
     if(len(cntry) == 0):
